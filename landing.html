@@ -11,6 +11,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		/*  SECTIONS  */
+			.section {
+				clear: both;
+				padding: 0px;
+				margin: 0px;
+			}
+
+			/*  COLUMN SETUP  */
+			.col {
+				display: block;
+				float:left;
+				margin: 1% 1 1% 1.6%;
+			}
+			.col:first-child { margin-left: 0; }
+
+
+			/*  GROUPING  */
+			.group:before,
+			.group:after {
+				content:"";
+				display:table;
+			}
+			.group:after {
+				clear:both;
+			}
+			.group {
+				zoom:1; /* For IE 6/7 */
+			}
+
+			/*  GRID OF THREE  */
+			.span_3_of_3 {
+				width: 100%;
+			}
+			.span_2_of_3 {
+				width: 66.1%;
+			}
+			.span_1_of_3 {
+				width: 32.2%;
+				margin-left: 1%;
+			}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+				@media only screen and (max-width: 1200px) {
+					.col { margin: 1% 0 1% 0%;}
+					.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+				}
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -95,61 +144,75 @@
 												<h3>Workflow</h3>
 											</header>
 											<p>This is the path at which we worked.</p>
-											<ul class="actions">
-												<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section id="ex3">
-									<a href="generic.html" class="image">
-										<img src="images/milestone.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner" >
-											<header class="major" >
-												<h3>Milestone Achieved</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section id="ex4">
-									<a href="generic.html" class="image">
-										<img src="images/resources.jpg" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner" >
-											<header class="major">
-												<h3>Project resources</h3>
-											</header>
-											<p>Documentation : <a href="https://drive.google.com/file/d/14tRdjMjxabTisfadcZxmMZ6EEq0ovp4h/view?usp=sharing" target="_blank" >Go Here</a></p>
-											<!-- <p>Presentation : Go Here</p> -->
-											<p>Poster : <a href="https://drive.google.com/file/d/1koDzZwW_weLknh0TVuAsqbl92ya9DQoN/view?usp=sharing" target="_blank" >Go Here</a></p>
 											<!-- <ul class="actions">
 												<li><a href="generic.html" class="button">Learn more</a></li>
 											</ul> -->
 										</div>
 									</div>
 								</section>
+								<section id="ex3">
+									<a href="generic.html" class="image">
+										<img src="images/goals.jpg" alt="" data-position="center center" style="height: 500px;"/>
+									</a>
+									<div class="content">
+										<div class="inner" >
+											<header class="major" >
+												<h3>Future Goals</h3>
+											</header>
+											
+											<ul class=" alt">
+												<li>Try the whole project in other programming languages like C++ for speedand real time experience.</li>
+												<li>Implement the project with actual hardware and then solve the issues, ifany.</li>
+												<li>Extract other visual appearances including beards, hairstyle, color and category for further avatar personalization.</li>
+												<li>The wide angle view can used for keypoint tracking of other people in theview, without accessories.</li>
+												<li>Study developments and researches in the field for improving the standards.</li>
+											</ul>
+											<!-- <ul class="actions">
+												<li><a href="generic.html" class="button">Learn more</a></li>
+											</ul> -->
+										</div>
+									</div>
+								</section>
+
+								
+							</section>
+							<!-- <iframe src="https://drive.google.com/file/d/121kgd1mdcATYXQAsNMknPWm9ChVYv3O5/preview" width="300" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+
+							<section id="ex4">
+								<!-- <a href="generic.html" class="image">
+									<img src="images/resources.jpg" alt="" data-position="top center" />
+								</a> -->
+								<div>
+									<div class="" >
+										<header class="major"  style=" text-align: center; margin: 0 auto;">
+
+											<h2>Project resources</h2>
+											
+										</header>
+										<div class="section group">
+											
+											<!-- Break -->
+											<div class="col span_1_of_3" style="text-align: center; ">
+												<h3>Poster</h3>
+												<iframe src="https://drive.google.com/file/d/121kgd1mdcATYXQAsNMknPWm9ChVYv3O5/preview" width="400" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+											</div>
+											<div class="col span_1_of_3" style="text-align: center; ">
+												<h3>Presentation</h3>
+												<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRmoXsV5srsKvs1sFcTphIRj5zSdS_32gmerWAQCx48cX83v1ahEdvGnVOMPIsBB1dVbtWs_hxwg1p7/embed?start=true&loop=true&delayms=10000" frameborder="0" width="400" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+											</div>
+											<div class="col span_1_of_3" style="text-align: center; ">
+												<h3>Documentation</h3>
+												<iframe src="https://drive.google.com/file/d/1nhyLiPbuPIM82Sr_BF1u2NFETmV6TyvI/preview" width="400" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+											</div>
+										<!-- <ul class="actions">
+											<li><a href="generic.html" class="button">Learn more</a></li>
+										</ul> -->
+									</div>
+								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
+							
 							<section id="two">
 								<div class="inner">
 									<header class="major">
